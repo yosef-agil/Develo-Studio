@@ -1,0 +1,82 @@
+// FONTS IMPORT
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap');
+
+// MARGINS SETTINGS
+body{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+// STYLE GUIDE
+// Fonts
+$mainfont: 'Inter', sans-serif;
+$secondaryfont: 'Roboto', sans-serif;
+// Fonts size
+$heading:38px;
+$subheading:28px;
+$content:14px;
+$projectSize:22px;
+$smallSize:12px;
+// Font weight
+$hero:bold;
+$paragraf:normal;
+$sub:medium;
+$proj:700;
+// Line height
+$lineheight1:22px;
+$lineheight2:28px;
+
+// Colors
+$secondary:#4A4DE8;
+$stroke:#F3F3FA;
+$white:#FFFFFF;
+$black:#111111;
+$parf:#414141;
+
+// Shadow
+$btnShadow: 0px 4px 25px 0px rgba(189, 190, 255, 0.6);
+$projectList:rgba(255, 255, 255, 1);
+
+
+// Navigation Bar
+nav{
+    font-family: $mainfont;
+    color: $black;
+    .brand-name{
+      a{
+        font-size: $projectSize;
+        font-weight: 700;
+        span{
+            color:$secondary;
+        }
+      }
+    }
+}
+
+//Hero Section
+.hero-section{
+  margin-top: 80px;
+  .row{
+    align-items: center;
+  }
+}
+.col-md-6{
+  
+  h1{
+    margin: 60px 0 30px 0;
+    font-size: $heading;
+    font-weight: $hero;
+    font-family: $mainfont;
+  }
+  button{
+    padding: 10px 40px;
+    border-radius: 50px;
+    font-size: $content;
+    font-weight: $sub;
+    font-family: $mainfont;
+    box-shadow: $btnShadow;
+  }
+  img{
+    width: 421px;
+  }
+}
